@@ -1,6 +1,6 @@
-# Mega Webscrapper, Apache NiFi, Tika and OpenNLP
+# Mega Webscrapper, Apache NiFi
 
-Mega website scrapper, using Apache NiFi, OpenNLP and Apache Tika.
+Mega website scrapper, using Apache NiFi.
 
 ![Apache NiFi/Mega Webscraper](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
 
@@ -11,12 +11,10 @@ Mega website scrapper, using Apache NiFi, OpenNLP and Apache Tika.
 For this part we are going to need;
 
 * AWS Instance with minimum of 2GB of memory and 50GB of disk space
-* Required NAR files for the additional OpenNLP and URL Extractor
+* Required NAR files for the URL Extractor
 * AWS Access key, with permissions to read/write to AWS S3
 
 ### Required NAR Files
-
-OpenNLP, https://github.com/tspannhw/nifi-nlp-processor
 
 Custom ExtractTextProcessor, https://github.com/tspannhw/nifi-extracttext-processor/releases/download/1.0/nifi-extracttext-nar-1.0.nar
 
@@ -77,6 +75,3 @@ TBD
 ## Acknowledgments
 
 https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html
-https://community.hortonworks.com/articles/81694/extracttext-nifi-custom-processor-powered-by-apach.html
-https://tika.apache.org/
-
