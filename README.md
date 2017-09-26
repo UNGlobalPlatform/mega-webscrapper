@@ -1,28 +1,63 @@
-# Mega Webscrapper, Apache NiFi, NLP, OpenNLP
+# Mega Webscrapper, Apache NiFi, Tika and OpenNLP
 
-Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract text from documents.
+Mega website scrapper, using Apache NiFi, OpenNLP and Apache Tika.
 
-![Apache NiFi/Twitter Dashboard](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
+![Apache NiFi/Mega Webscraper](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
 
 ## Getting Started
 
 ## Prerequisites
 
-For this part we are going to need xxxx.
+For this part we are going to need;
+
+* AWS Instance with minimum of 2GB of memory and 50GB of disk space
+* Required NAR files for the additional OpenNLP and URL Extractor
+* AWS Access key, with permissions to read/write to AWS S3
 
 ### Required NAR Files
 
-NLP
+OpenNLP, https://github.com/tspannhw/nifi-nlp-processor
 
-NLP Core
+Custom ExtractTextProcessor, https://github.com/tspannhw/nifi-extracttext-processor/releases/download/1.0/nifi-extracttext-nar-1.0.nar
 
 ### Required NiFi Controller Services
 
-AWS Credentials Service
+#### AWSCredentialsProviderControllerService
 
-DistributedMapCacheClientService
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-aws-nar/1.3.0/org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderControllerService/index.html
 
-DistributedMapCacheServerService
+#### DistributedMapCacheClientService
+
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.client.DistributedMapCacheClientService/index.html
+
+#### DistributedMapCacheServer
+
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer/index.html
+
+## Installation
+
+### Java Heap Size
+
+Bootstrap.conf file:
+
+The bootstrap.conf file in the conf directory allows users to configure settings for how NiFi should be started. This includes parameters, such as the size of the Java Heap, what Java command to run, and Java System Properties. This files comes pre-configured with default values.
+```
+java.arg.2=-Xms512m
+java.arg.3=-Xmx512m
+```
+![Apache NiFi/Java Heap Size](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-javahelp.png?raw=true)
+
+This section is used to control the amount of heap memory to use by the JVM running NiFi. Xms defines the initial memory allocation, while Xmx defines the maximum memory allocation for the JVM. As you can see the default values are very small and not suitable for dataflows of any substantial size.
+
+Increase both the initial and maximum heap memory allocations to at least 4GB or 8GB for starters, or else the scraper will run out of memory.
+
+### Install Required NAR Files
+
+Copy the required NAR files to
+
+```
+/var/nifi/custom/lib-extra
+```
 
 ## Contributing
 
@@ -40,4 +75,8 @@ See also the list of [contributors](https://github.com/your/project/contributors
 TBD
 
 ## Acknowledgments
+
+https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html
+https://community.hortonworks.com/articles/81694/extracttext-nifi-custom-processor-powered-by-apach.html
+https://tika.apache.org/
 
