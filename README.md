@@ -20,9 +20,9 @@ NLP Core
 
 AWS Credentials Service
 
-DistributedMapCacheClientService
+DistributedMapCacheClientService, https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.client.DistributedMapCacheClientService/index.html
 
-DistributedMapCacheServerService
+DistributedMapCacheServer, https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer/index.html
 
 ### Java Heap Size
 Increase the java heap size, or else the scraper will run out of memory. Change the following to suite the memory within your server.
