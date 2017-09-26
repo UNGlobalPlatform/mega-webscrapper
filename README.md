@@ -51,6 +51,14 @@ This section is used to control the amount of heap memory to use by the JVM runn
 
 Increase both the initial and maximum heap memory allocations to at least 4GB or 8GB for starters, or else the scraper will run out of memory.
 
+### Install Required NAR Files
+
+Copy the required NAR files to
+
+```
+/var/nifi/custom/lib-extra
+```
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
