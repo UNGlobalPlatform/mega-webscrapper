@@ -43,7 +43,9 @@ Bootstrap.conf file:
 
 The bootstrap.conf file in the conf directory allows users to configure settings for how NiFi should be started. This includes parameters, such as the size of the Java Heap, what Java command to run, and Java System Properties. This files comes pre-configured with default values.
 
-Increase the java heap size, or else the scraper will run out of memory. Change the following to suite the memory within your server. This section is used to control the amount of heap memory to use by the JVM running NiFi. Xms defines the initial memory allocation, while Xmx defines the maximum memory allocation for the JVM. As you can see the default values are very small and not suitable for dataflows of any substantial size. Increase both the initial and maximum heap memory allocations to at least 4GB or 8GB for starters.
+This section is used to control the amount of heap memory to use by the JVM running NiFi. Xms defines the initial memory allocation, while Xmx defines the maximum memory allocation for the JVM. As you can see the default values are very small and not suitable for dataflows of any substantial size.
+
+Increase both the initial and maximum heap memory allocations to at least 4GB or 8GB for starters, or else the scraper will run out of memory.
 
 ```
 java.arg.2=-Xms512m
