@@ -16,13 +16,26 @@ NLP
 
 NLP Core
 
-### Required NiFi Controller Services
 
 AWS Credentials Service
 
-DistributedMapCacheClientService, https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.client.DistributedMapCacheClientService/index.html
+DistributedMapCacheClientService
 
-DistributedMapCacheServer, https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer/index.html
+### Required NiFi Controller Services
+
+#### AWSCredentialsProviderControllerService
+
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-aws-nar/1.3.0/org.apache.nifi.processors.aws.credentials.provider.service.AWSCredentialsProviderControllerService/index.html
+
+#### DistributedMapCacheClientService
+
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.client.DistributedMapCacheClientService/index.html
+
+#### DistributedMapCacheServer
+
+https://nifi.apache.org/docs/nifi-docs/components/org.apache.nifi/nifi-distributed-cache-services-nar/1.3.0/org.apache.nifi.distributed.cache.server.map.DistributedMapCacheServer/index.html
+
+## Installation
 
 ### Java Heap Size
 Increase the java heap size, or else the scraper will run out of memory. Change the following to suite the memory within your server.
