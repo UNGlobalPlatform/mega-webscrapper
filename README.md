@@ -16,14 +16,9 @@ For this part we are going to need;
 
 ### Required NAR Files
 
-NLP
+OpenNLP
 
-NLP Core
-
-
-AWS Credentials Service
-
-DistributedMapCacheClientService
+ExtractText
 
 ### Required NiFi Controller Services
 
