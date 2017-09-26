@@ -16,9 +16,9 @@ For this part we are going to need;
 
 ### Required NAR Files
 
-OpenNLP
+OpenNLP, https://github.com/tspannhw/nifi-nlp-processor
 
-ExtractText
+Custom ExtractTextProcessor, https://github.com/tspannhw/nifi-extracttext-processor/releases/download/1.0/nifi-extracttext-nar-1.0.nar
 
 ### Required NiFi Controller Services
 
@@ -69,5 +69,6 @@ TBD
 ## Acknowledgments
 
 https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html
+https://community.hortonworks.com/articles/81694/extracttext-nifi-custom-processor-powered-by-apach.html
 https://tika.apache.org/
 
