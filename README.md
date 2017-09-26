@@ -2,7 +2,7 @@
 
 Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract text from documents.
 
-![Apache NiFi/Twitter Dashboard](https://github.com/UNGlobalPlatform/twitter-dash/blob/master/docs/twitter-dashboard.png?raw=true)
+![Apache NiFi/Twitter Dashboard](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
 
 ## Getting Started
 
