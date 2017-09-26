@@ -2,7 +2,7 @@
 
 Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract text from documents.
 
-![Apache NiFi/Twitter Dashboard](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
+![Apache NiFi/Mega Webscraper](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
 
 ## Getting Started
 
@@ -23,6 +23,11 @@ AWS Credentials Service
 DistributedMapCacheClientService
 
 DistributedMapCacheServerService
+
+### Java Heap Size
+
+![Apache NiFi/Java Heap Size](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-javahelp.png?raw=true)
+
 
 ## Contributing
 
