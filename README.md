@@ -70,6 +70,13 @@ Create a new DistributedMapCacheClientService controller service and save the co
 
 Create a new DistributedMapCacheServer controller service and save the configuration with all the defaults.
 
+### NiFi Template
+
+Upload the Mega Webscrapper NiFi template.
+
+
+
+
 
 ## Contributing
 
