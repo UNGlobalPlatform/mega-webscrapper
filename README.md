@@ -51,11 +51,25 @@ Increase both the initial and maximum heap memory allocations to at least 4GB or
 
 ### Install Required NAR Files
 
-Copy the required NAR files to
+Copy the required NAR files to:
 
 ```
 /var/nifi/custom/lib-extra
 ```
+Create/Configure the Required Controller Services.
+
+#### AWSCredentialsProviderControllerService
+
+Create a new AWSCredentialsProviderControllerService and set the Access Key and Secret Key. Leave all other settings as default.
+
+#### DistributedMapCacheClientService
+
+Create a new DistributedMapCacheClientService controller service and save the configuration with all the defaults.
+
+#### DistributedMapCacheServer
+
+Create a new DistributedMapCacheServer controller service and save the configuration with all the defaults.
+
 
 ## Contributing
 
