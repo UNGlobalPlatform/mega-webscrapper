@@ -8,7 +8,11 @@ Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract tex
 
 ## Prerequisites
 
-For this part we are going to need xxxx.
+For this part we are going to need;
+
+* AWS Instance with minimum of 2GB of memory and 50GB of disk space
+* Required NAR files for the additional OpenNLP and URL Extractor
+* AWS Access key, with permissions to read/write to AWS S3
 
 ### Required NAR Files
 
