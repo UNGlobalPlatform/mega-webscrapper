@@ -1,4 +1,4 @@
-# Mega Webscrapper, Apache NiFi, NLP, OpenNLP
+# Mega Webscrapper, Apache NiFi and OpenNLP
 
 Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract text from documents.
 
