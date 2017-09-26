@@ -6,6 +6,10 @@ Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract tex
 
 ## Getting Started
 
+## Prerequisites
+
+For this part we are going to need xxxx.
+
 ### Required NAR Files
 
 NLP
@@ -14,15 +18,11 @@ NLP Core
 
 ### Required NiFi Controller Services
 
-AWS Credentials
+AWS Credentials Service
 
 DistributedMapCacheClientService
 
 DistributedMapCacheServerService
-
-### Prerequisites
-
-For this part we are going to need Solr, Banana and NiFi and we are going to create an interactive dashboard of the tweets.
 
 ## Contributing
 
