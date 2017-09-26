@@ -1,6 +1,6 @@
-# Mega Webscrapper, Apache NiFi and OpenNLP
+# Mega Webscrapper, Apache NiFi, Tika and OpenNLP
 
-Mega website scrapper, using Apache NiFi, OpenNLP and Apache xxxx to extract text from documents.
+Mega website scrapper, using Apache NiFi, OpenNLP and Apache Tika.
 
 ![Apache NiFi/Mega Webscraper](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-mega-webscraper.png?raw=true)
 
@@ -69,3 +69,5 @@ TBD
 ## Acknowledgments
 
 https://nifi.apache.org/docs/nifi-docs/html/administration-guide.html
+https://tika.apache.org/
+
