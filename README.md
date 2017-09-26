@@ -25,6 +25,12 @@ DistributedMapCacheClientService
 DistributedMapCacheServerService
 
 ### Java Heap Size
+Increase the java heap size, or else the scraper will run out of memory. Change the following to suite the memory within your server.
+
+```
+java.arg.2=-Xms512m
+java.arg.3=-Xmx512m
+```
 
 ![Apache NiFi/Java Heap Size](https://github.com/UNGlobalPlatform/mega-webscrapper/blob/master/docs/nifi-javahelp.png?raw=true)
 
